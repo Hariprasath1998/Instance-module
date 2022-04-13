@@ -22,6 +22,11 @@ variable "ec2-ami-id" {
   type        = string
 }
 
+variable "ec2-iam-instance-profile" {
+  description = "To set the instance IAM Profile"
+  type        = string
+}
+
 variable "ec2-instance-type" {
   description = "To set the Instance type"
   type        = string

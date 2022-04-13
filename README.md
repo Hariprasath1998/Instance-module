@@ -28,6 +28,7 @@ No modules.
 | <a name="input_ec2-ami-id"></a> [ec2-ami-id](#input\_ec2-ami-id) | To set the instance AMI | `string` | n/a | yes |
 | <a name="input_ec2-connection-type"></a> [ec2-connection-type](#input\_ec2-connection-type) | (Optional) To set the Instance connection type | `string` | `null` | no |
 | <a name="input_ec2-destination-file"></a> [ec2-destination-file](#input\_ec2-destination-file) | (Optional) To set the destination file path for file provisioner | `string` | `null` | no |
+| <a name="input_ec2-iam-instance-profile"></a> [ec2-iam-instance-profile](#input\_ec2-iam-instance-profile) | To set the instance IAM Profile | `string` | n/a | yes |
 | <a name="input_ec2-inline-script"></a> [ec2-inline-script](#input\_ec2-inline-script) | (Optional) To set the inline commands | `list(string)` | `null` | no |
 | <a name="input_ec2-instance-count"></a> [ec2-instance-count](#input\_ec2-instance-count) | To set the Instance count | `number` | `1` | no |
 | <a name="input_ec2-instance-type"></a> [ec2-instance-type](#input\_ec2-instance-type) | To set the Instance type | `string` | n/a | yes |

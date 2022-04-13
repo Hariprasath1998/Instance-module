@@ -4,6 +4,7 @@ terraform {
 
 resource "aws_instance" "web-server" {
   ami             = var.ec2-ami-id
+  iam_instance_profile = var.ec2-iam-instance-profile
   instance_type   = var.ec2-instance-type
   security_groups = var.ec2-security-groups
   user_data       = var.ec2-user-data
@@ -33,7 +34,5 @@ resource "aws_instance" "web-server" {
   provisioner "remote-exec" {
     inline = var.ec2-inline-script
   }
-
-
 }
 
