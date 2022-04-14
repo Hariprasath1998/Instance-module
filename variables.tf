@@ -45,38 +45,6 @@ variable "ec2-key-name" {
   type        = string
   default     = null
 }
-variable "ec2-connection-type" {
-  description = "(Optional) To set the Instance connection type"
-  type        = string
-  default     = null
-}
-variable "ec2-user" {
-  description = "(Optional) To set the Instance User name"
-  type        = string
-  default     = null
-}
-variable "ec2-private-key" {
-  description = "(Optional) To set the Instance private key"
-  type        = string
-  default     = null
-}
-
-
-variable "ec2-inline-script" {
-  description = "(Optional) To set the inline commands"
-  type        = list(string)
-  default     = null
-}
-variable "ec2-source-file" {
-  description = "(Optional) To set the source file path for file provisioner"
-  type        = string
-  default     = null
-}
-variable "ec2-destination-file" {
-  description = "(Optional) To set the destination file path for file provisioner"
-  type        = string
-  default     = null
-}
 
 
 variable "subnet-ids" {

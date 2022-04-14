@@ -19,20 +19,5 @@ resource "aws_instance" "web-server" {
     owner       = "${var.project-developer}"
   }
 
-  connection {
-    type        = var.ec2-connection-type
-    host        = self.public_ip
-    user        = var.ec2-user
-    private_key = var.ec2-private-key
-  }
-
-  provisioner "file" {
-    source      = var.ec2-source-file
-    destination = var.ec2-destination-file
-  }
-
-  provisioner "remote-exec" {
-    inline = var.ec2-inline-script
-  }
 }
 
